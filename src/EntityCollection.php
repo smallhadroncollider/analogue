@@ -130,7 +130,7 @@ class EntityCollection extends Collection
      *
      * @return bool
      */
-    public function contains($key, $value = null)
+    public function contains($key, $operator = null, $value = null)
     {
         if (func_num_args() == 2) {
             return !$this->where($key, $value)->isEmpty();
